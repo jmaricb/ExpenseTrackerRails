@@ -1,0 +1,9 @@
+<h1>Categories#edit</h1>
+
+<%= form_with model: @category do |form| %>
+  <%= form.text_field :title, placeholder: "title" %>
+  <%= form.text_field :color, placeholder: "color" %>
+  <%= form.text_field :description, placeholder: "description" %>
+
+  <%= form.submit %>
+<% end %>

@@ -1,0 +1,7 @@
+<h1>Categories#show</h1>
+
+<h1><%= @category.title %></h1>
+<h4>"<%= @category.color %>"</h4>
+<h4>"<%= @category.description %>"</h4>
+
+<%= link_to 'Remove', @category, method: :delete, data: { confirm: 'Are you sure?' } %>
