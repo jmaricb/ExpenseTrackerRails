@@ -2,12 +2,3 @@
 <p>
   The time is now: <%= Time.now %>
 </p>
-<table>
-  <% @categories.each do |category| %>
-    <tr>
-      <td><%= link_to category.title, category_path(category) %></td>
-      <td><%= button_to 'Edit', edit_category_path(category), method: 'get'%></td>
-      <td><%= button_to 'Remove', category_path(category), method: 'delete', data: { confirm: 'Are you sure?' } %></td>
-  <% end %>
-</table>
-<%= link_to "Add a New Category", new_category_path %>
